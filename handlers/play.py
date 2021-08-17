@@ -187,7 +187,7 @@ def r_ply(type_):
                 
             ],
             [       
-                InlineKeyboardButton("❌ Close",'cls')
+                InlineKeyboardButton("🗞 Close",'cls')
             ]        
         ]
     )
@@ -360,7 +360,7 @@ async def m_cb(b, cb):
                 
                 ],
                 [       
-                    InlineKeyboardButton("❌ Close",'cls')
+                    InlineKeyboardButton("🗞 Close",'cls')
                 ]        
             ]
         )

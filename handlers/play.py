@@ -451,7 +451,7 @@ async def play(_, message: Message):
         return     
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("**__Searching Your Song__**")
+    await lel.edit("**__🧐DHUND RHA HU TERA SONG🧐__**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -462,7 +462,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("**__Processing Your Song__**")
+    await lel.edit("**__LAGA RHA HU TERA SONG RUK JA BHAI🙈__**")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -478,7 +478,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Song not found.Try another song or maybe spell it properly.")
+        await lel.edit("DEKH BHAI BAHUT DHUNDA TERA SONG NHI MILA🥺 SORRY .Try another song or maybe spell it properly.")
         print(str(e))
         return
 
